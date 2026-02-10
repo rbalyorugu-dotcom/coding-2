@@ -4,11 +4,13 @@ def discount():
         discount = .15
         sum = itemPrice * discoun
         total = itemPrice - sum
+        print(sum)
         print("this is your final total" + str(total))
     elif itemPrice >75:
         discount = .25
         sum = itemPrice * discount
         total = itemPrice - sum
+        print(sum)
         print("this is your final total"+ str(total))
     else:
         print("sorry, you do not get a discount.")
