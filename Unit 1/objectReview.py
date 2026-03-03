@@ -1,30 +1,39 @@
 x = str("A class property is a varibale that stores data for a class.")
 x = str("A class method is an action that a class performs via a function.")
 
-class student:
+class Student:
     def __init__(self, name, age, grade, GPA):
         self.name = name
         self.age = age
         self.grade = grade
         self.GPA = GPA
 
-    def attendClass(name):
+    def attendClass(self, name):
         print(self.name + "is attending class.")
 
-    def doHomework(name):
+    def doHomework(self, name):
         print(self.name + "is doing homework.")
 
-    def study(name):
+    def study(self, name):
         print(self.name + "has a test tomorrow.")
         print(self.name + "is studying for the test.")
 
-    s1 = student("Harry", "17", "12th", "4.0")
-    s2 = student("Roy", "17", "12th", "4.5")
+    def study(self, grade):
+        print(self.name + " is studying for " + grade)
+
+
+    s1 = Student("Harry", "17", "12th", "4.0")
+    s2 = Student("Roy", "17", "12th", "4.5")
 
     class Fighter:
-        def _init_(self, name, strength, dexterity, vitality, magic):
-            self.name = name
+        def _init_(self, Tifa, strength, dexterity, vitality, magic):
+            self.Tifa = Tifa
             self.strength = strength
             self.dexterity = dexterity
             self.vitality = vitality
             self.magic = magic
+
+        def attack(self, Tifa, strength)
+            print('self.Tifa' + "threw 3 punches and one kick" + "with level 50 strength")
+
+            
