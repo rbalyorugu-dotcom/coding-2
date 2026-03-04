@@ -26,14 +26,27 @@ class Student:
     s2 = Student("Roy", "17", "12th", "4.5")
 
     class Fighter:
-        def _init_(self, Tifa, strength, dexterity, vitality, magic):
+        def _init_(self, Tifa, strength, dexterity, vitality, materia):
             self.Tifa = Tifa
             self.strength = strength
             self.dexterity = dexterity
             self.vitality = vitality
-            self.magic = magic
+            self.materia = materia
 
-        def attack(self, Tifa, strength)
+        def attack(self, Tifa, strength):
             print('self.Tifa' + "threw 3 punches and one kick" + "with level 50 strength")
+
+        def materia(self, Tifa, materia)
+            if Tifa uses luck materia
+                print("Luck is increased by 10%")
+
+        def Limit Break(self, Tifa, strength)
+            print("Tifa uses level 3 limit break")
+
+            
+
+
+
+
 
             
