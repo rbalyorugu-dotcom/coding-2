@@ -4,6 +4,9 @@ class CarModel:
         self.model = model
         self.speed = speed
 
+        def color(self, color, model):
+            print(self.model + "is" + "red")
+
         def drive(self, model, speed):
             print(self.model + "is driving at" + self.speed + "50 mph"):
 
