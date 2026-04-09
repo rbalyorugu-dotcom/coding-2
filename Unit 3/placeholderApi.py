@@ -1,5 +1,6 @@
 import requests
+url = ("https://pokeapi.co/api/v2/pokemon-species/{id or name}/")
+response = requests.get(url)
 
-
-response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
 print(response)
+print(response.json())
