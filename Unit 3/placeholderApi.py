@@ -4,3 +4,10 @@ response = requests.get(url)
 
 print(response)
 print(response.json())
+
+import requests
+url = ("https://bored-api.appbrewery.com/random")
+response = requests.get(url)
+
+print (response)
+print(response.json())
