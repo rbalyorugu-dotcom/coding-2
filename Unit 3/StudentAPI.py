@@ -1,16 +1,47 @@
 import requests
 
-url = "https://rickandmortyapi.com/api/character/1"
-response = requests.get(url)
+url = "https://rickandmortyapi.com/api/character/1,183"
+res = requests.get(url)
 
-RickSanchez = "https://rickandmortyapi.com/api/RickSanchez"
-res = requests.get()
+if res.status_code == 200:
+    charData = res.json()
+    filtData = {
+        "name": charData["name"],
+        "gender": charData["gender"],
+        "image": charData["image"],
+    }
+    print(filtData)
+else:
+    print("something went wrong")
+    print(res.status_code)
 
-SummerSmith = "https://rickandmortyapi.com/api/SummerSmith"
-res = requests.get()
+url_2 = "https://rickandmortyapi.com/api/character/60"
+res = requests.get(url_2)
 
-RickPrime = "https://rickandmortyapi.com/apiRickPrime"
-res = requests.get()
+if res.status_code == 200:
+    charData = res.json()
+    filtData = {
+        "name": charData["name"],
+        "gender": charData["gender"],
+        "image": charData["image"],
+    }
+    print(filtData)
+else:
+    print("something went wrong")
+    print(res.status_code)
 
-print(response)
-print(response.json())
+
+url_3 = "https://rickandmortyapi.com/api/character/400"
+res = requests.get(url_3)
+
+if res.status_code == 200:
+    charData = res.json()
+    filtData = {
+        "name": charData["name"],
+        "gender": charData["gender"],
+        "image": charData["image"],
+    }
+    print(filtData)
+else:
+    print("something went wrong")
+    print(res.status_code)
