@@ -16,7 +16,7 @@ finalsTesting = {
 srProm = {
     "time": "10AM"
     "date": "May 8th",
-    ""grades": "12"
+    "grades": "12"
 }
 
 
